@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    background-color: antiquewhite;
+}
+h1{
+    margin-bottom: 20px;
+    background-color: rgb(145, 238, 241);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    font-family: sans-serif;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.add-msg{
+    width: 300px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(63, 41, 212);
+    color: aliceblue;
+    box-shadow: 2px 2px 8px 0.5px rgba(0, 0, 0, 0.1);
+}
+.add-icon{
+    padding: 3px 9px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(131, 112, 255);
+
+}
+.add-icon ion-icon{
+    font-size: 25px;
+    color: antiquewhite;
+    margin-top: 3px;
+}
+
+.msgs{
+    width: 600px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 8px 0.5px rgba(0, 0, 0, 0.1);
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options ion-icon{
+    padding: 10px 8px;
+    font-size: 20px;
+    color: black;
+}
+
+.msg{
+    width: 450px;
+    word-wrap: break-word;
+}
+.desc-cont{
+    display: none;
+    position: relative;
+    width: 600px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(127, 127, 127);
+
+}
+.desc-msg{
+    display: block;
+    width: 500px;
+    color: rgb(255, 228, 228);
+    word-wrap: break-word;
+}
+.desc-cont ion-icon{
+    position: absolute;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 5px;
+    right: 5%;
+    top: 10%;
+}
+.pop-up{
+    display:none;
+    position: fixed;
+    bottom: 20%;
+    right: 20px;
+    z-index: 10;
+    border: 5px solid darkslategray;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: rgba(112, 209, 211, 0.693);
+}
+.pop-up-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pop-up-cls{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.pop-up-cls ion-icon{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.pop-up-inp{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+.pop-up-desc{
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.error{
+    color: red;
+    font-size: 13px;
+    margin-top: -5px;
+}
+.pop-up-btm{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.pop-up-addbtn{
+    width: 60px;
+    padding: 10px;
+    background-color: darkgreen;
+    border: none;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.pop-up-clsbtn{
+    width: 60px;
+    padding: 10px;
+    background-color: darkslateblue;
+    border: none;
+    color: whitesmoke;
+    border-radius: 20px;
+}

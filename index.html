@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo_List App</title>
+    <link rel="stylesheet" href="Todo-list app.css">
+</head>
+<body>
+    <h1>Todo List</h1>
+    <div class="main">
+        <div class="add-msg">
+            Add Todo-list... <button class="add-icon" onclick="openPopUp()"><ion-icon name="add-outline"></ion-icon></button>
+        </div>
+        <div class="msg-cont">
+            
+        </div>
+        <div class="pop-up">
+            <form class="pop-up-form">
+                <p class="pop-up-cls"><ion-icon name="close-outline" onclick="closePopUp()"></ion-icon></p>
+                <input class="pop-up-inp" type="text" placeholder="Enter your msg here..." size="28">
+                <textarea class="pop-up-desc" name="" id="" cols="32" rows="6" placeholder="Description..."></textarea>
+                <span class="error"></span>
+                <div class="pop-up-btm">
+                    <button class="pop-up-addbtn" type="submit">Add</button>  
+                    <button class="pop-up-clsbtn" onclick="closePopUp()">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Todo-list app.js"></script>
+</body>
+</html>
